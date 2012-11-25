@@ -1,5 +1,5 @@
-ClubMaster
-==========
+ClubMaster User Guide
+=====================
 :Author:    Michael Holm Kristensen
 :Email:     <hollo@hollo.dk>
 :Date:      2012-10-20
@@ -67,4 +67,3 @@ If you want to change any of the context of the default messages ClubMaster send
 app/Resources/ClubMailBundle/views/Template/
 
 Just give the files the exact same name, and you can do whatever you like with the messages.
-

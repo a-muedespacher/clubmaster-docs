@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.6.7" />
+<title>ClubMaster User Guide</title>
+<link rel="stylesheet" href="../css/flask.css" type="text/css" />
+<script type="text/javascript" src="../js/asciidoc.js"></script>
+<script type="text/javascript" src="../js/flask.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+asciidoc.install(2);
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>ClubMaster User Guide</h1>
+<span id="author">Michael Holm Kristensen</span><br />
+<span id="email"><tt>&lt;<a href="mailto:&lt;hollo@hollo.dk&gt;">&lt;hollo@hollo.dk&gt;</a>&gt;</tt></span><br />
+<span id="revnumber">version 27,</span>
+<span id="revdate">2012-10-20</span>
+<div id="toc">
+  <div id="toctitle">Table of Contents</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_feedback">Feedback</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>It would really help me a lot of you can give me just any feedback at <a href="mailto:hollo@hollo.dk">hollo@hollo.dk</a>.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequirements">Prerequirements</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>In order to run this software you need to following prerequirements:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Webserver
+</p>
+</li>
+<li>
+<p>
+PHP 5.3.2
+</p>
+</li>
+<li>
+<p>
+MySQL 5
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Besides it higly suggested to:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Enable mod_rewrite for apache
+</p>
+</li>
+<li>
+<p>
+AllowOverride All in your apache configuration
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation">Installation</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>In order to install ClubMaster, do the following:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Extract files to your server
+</p>
+</li>
+<li>
+<p>
+Create the database
+</p>
+</li>
+<li>
+<p>
+Locate the web/setup.php folder in your browser, and follow onscreen installation
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upgrade">Upgrade</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>To upgrade from a previously version of ClubMaster, do the following:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Backup the database
+</p>
+</li>
+<li>
+<p>
+Backup the old files
+</p>
+</li>
+<li>
+<p>
+Extract the new project in top of the old
+</p>
+</li>
+<li>
+<p>
+Visit the page /upgrade, and follow the onscreen information
+</p>
+</li>
+</ul></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">In version 1.2 we will introduce a new way of migration that will go much easier than before, unfortunately that will result in no way to upgrade from version 1.1 to 1.2.</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration">Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>In app/config/clubmaster.yml if will find a config file, where you can change almost anything in the system.</p></div>
+<div class="paragraph"><p>You can enable and disable different modules, you should take a look at this file in order to fit ClubMaster to your needs.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mail_templating">Mail Templating</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>The system will send mails out at different events. The filenames should explain pretty good when the mail is sent out.</p></div>
+<div class="paragraph"><p>You can find all the templates in:</p></div>
+<div class="paragraph"><p>src/Club/MailBundle/Resources/views/Template/</p></div>
+<div class="paragraph"><p>If you want to change any of the context of the default messages ClubMaster send out, you should make a copy of the folder to:</p></div>
+<div class="paragraph"><p>app/Resources/ClubMailBundle/views/Template/</p></div>
+<div class="paragraph"><p>Just give the files the exact same name, and you can do whatever you like with the messages.</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer">
+<div id="footer-text">
+Version 27<br />
+Last updated 2012-11-25 15:46:03 CET
+</div>
+</div>
+</body>
+</html>
