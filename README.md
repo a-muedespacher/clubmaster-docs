@@ -1,0 +1,4 @@
+clubmaster-docs
+===============
+
+ClubMaster documentation
