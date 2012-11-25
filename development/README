@@ -1,5 +1,5 @@
-ClubMaster
-==========
+ClubMaster development
+======================
 :Author:    Michael Holm Kristensen
 :Email:     <hollo@hollo.dk>
 :Date:      2012-10-20
@@ -23,50 +23,6 @@ Besides it higly suggested to:
 
 - Enable mod_rewrite for apache
 - AllowOverride All in your apache configuration
-
-
-Installation
-------------
-In order to install ClubMaster, do the following:
-
-- Extract files to your server
-- Create the database
-- Locate the web/setup.php folder in your browser, and follow onscreen installation
-
-
-Upgrade
--------
-To upgrade from a previously version of ClubMaster, do the following:
-
-- Backup the database
-- Backup the old files
-- Extract the new project in top of the old
-- Visit the page /upgrade, and follow the onscreen information
-
-[NOTE]
-In version 1.2 we will introduce a new way of migration that will go much easier than before, unfortunately that will result in no way to upgrade from version 1.1 to 1.2.
-
-
-Configuration
--------------
-In app/config/clubmaster.yml if will find a config file, where you can change almost anything in the system.
-
-You can enable and disable different modules, you should take a look at this file in order to fit ClubMaster to your needs.
-
-
-Mail Templating
----------------
-The system will send mails out at different events. The filenames should explain pretty good when the mail is sent out.
-
-You can find all the templates in:
-
-src/Club/MailBundle/Resources/views/Template/
-
-If you want to change any of the context of the default messages ClubMaster send out, you should make a copy of the folder to:
-
-app/Resources/ClubMailBundle/views/Template/
-
-Just give the files the exact same name, and you can do whatever you like with the messages.
 
 
 Development
