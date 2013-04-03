@@ -145,6 +145,22 @@ Success response will be HTTP response code 200, and a json response with specif
 Failure response will be HTTP response code 403
 
 
+Get all announcements
+~~~~~~~~~~~~~~~~~~~~~
+URL: /api/news
+Method: GET
+
+Success response will be HTTP response code 200, and a json response with all news announcements
+
+
+Get all products in shop
+~~~~~~~~~~~~~~~~~~~~~~~~
+URL: /api/shop/
+Method: GET
+
+Success response will be HTTP response code 200, and a json response with all categories and products
+
+
 Get all events
 ~~~~~~~~~~~~~~
 URL: /api/events/
