@@ -53,6 +53,10 @@ In app/config/clubmaster.yml if will find a config file, where you can change al
 
 You can enable and disable different modules, you should take a look at this file in order to fit ClubMaster to your needs.
 
+After you have made some changes, you have to clear the system cache:
+
+Remove the folder app/cache/prod, and the changes will take effect.
+
 
 Mail Templating
 ---------------
